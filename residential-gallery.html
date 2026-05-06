@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residential Gallery | Badar Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div></div>
+      <nav class="main-nav">
+        <a href="index.html#home" data-en="Home" data-es="Inicio">Home</a>
+        <a href="index.html#what-we-do" data-en="What We Do" data-es="Qué Hacemos">What We Do</a>
+        <a href="index.html#projects" data-en="Gallery Projects" data-es="Galería de Proyectos">Gallery Projects</a>
+        <a href="index.html#services" data-en="Services" data-es="Servicios">Services</a>
+        <a href="index.html#contact" data-en="Contact" data-es="Contacto">Contact</a>
+      </nav>
+      <div class="language-inline">
+        <span onclick="setLanguage('en', this)" data-lang="en" class="lang active">EN</span>
+        <span onclick="setLanguage('es', this)" data-lang="es" class="lang">ES</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="gallery-hero residential-bg">
+    <div class="gallery-hero-content">
+      <p class="section-label light" data-en="Project Gallery" data-es="Galería de Proyectos">Project Gallery</p>
+      <h1 data-en="Residential Gallery" data-es="Galería Residencial">Residential Gallery</h1>
+      <p data-en="Use the arrows inside each project cube to view more photos from that same project." data-es="Usa las flechas dentro de cada cubo de proyecto para ver más fotos de ese mismo proyecto.">Use the arrows inside each project cube to view more photos from that same project.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <p class="section-label" data-en="Residential Projects" data-es="Proyectos Residenciales">Residential Projects</p>
+      <h2 data-en="Completed Work" data-es="Trabajos Realizados">Completed Work</h2>
+      <p data-en="These 8 project cubes are ready for your real photos. Add more images inside each cube by adding more img tags inside its project-track." data-es="Estos 8 cubos de proyecto están listos para tus fotos reales. Agrega más imágenes dentro de cada cubo añadiendo más etiquetas img dentro de project-track.">These 8 project cubes are ready for your real photos. Add more images inside each cube by adding more img tags inside its project-track.</p>
+    </div>
+    <div class="project-gallery-grid">
+      <div class="project-card" data-project-id="residential1">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src='images/photo8.png' alt="Project 1 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=80" alt="Project 1 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Project 1 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 1" data-es="Proyecto 1">Project 1</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+      <div class="project-card" data-project-id="residential2">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Project 2 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80" alt="Project 2 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Project 2 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 2" data-es="Proyecto 2">Project 2</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+      <div class="project-card" data-project-id="residential3">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Project 3 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Project 3 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=900&q=80" alt="Project 3 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 3" data-es="Proyecto 3">Project 3</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+      <div class="project-card" data-project-id="residential4">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=900&q=80" alt="Project 4 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80" alt="Project 4 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Project 4 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 4" data-es="Proyecto 4">Project 4</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+      <div class="project-card" data-project-id="residential5">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Project 5 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Project 5 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Project 5 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 5" data-es="Proyecto 5">Project 5</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+      <div class="project-card" data-project-id="residential6">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Project 6 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=80" alt="Project 6 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Project 6 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 6" data-es="Proyecto 6">Project 6</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+      <div class="project-card" data-project-id="residential7">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Project 7 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80" alt="Project 7 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Project 7 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 7" data-es="Proyecto 7">Project 7</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+      <div class="project-card" data-project-id="residential8">
+        <div class="project-window">
+          <div class="project-track">
+            <img class="project-image" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Project 8 photo 1">
+            <img class="project-image" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Project 8 photo 2">
+            <img class="project-image" src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=900&q=80" alt="Project 8 photo 3">
+          </div>
+          <button class="project-nav left" onclick="moveProjectGallery(this,-1)" aria-label="Previous image">&#10094;</button>
+          <button class="project-nav right" onclick="moveProjectGallery(this,1)" aria-label="Next image">&#10095;</button>
+          <span class="project-counter">1 / 3</span>
+        </div>
+        <div class="project-card-content">
+          <h3 data-en="Project 8" data-es="Proyecto 8">Project 8</h3>
+          <p data-en="Replace these placeholder images with your real project photos." data-es="Reemplaza estas imágenes de ejemplo con las fotos reales de tu proyecto.">Replace these placeholder images with your real project photos.</p>
+        </div>
+      </div>
+    </div>
+    <a class="back-link" href="index.html#projects" data-en="← Back to Gallery Projects" data-es="← Regresar a Galería de Proyectos">← Back to Gallery Projects</a>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-box">
+      <p class="section-label light" data-en="Contact" data-es="Contacto">Contact</p>
+      <h2 data-en="Ready to start your project?" data-es="¿Listo para empezar tu proyecto?">Ready to start your project?</h2>
+      <div class="contact-info"><p><strong>Email:</strong> info@kojiconstruction.com</p><p><strong>Phone:</strong> (000) 000-0000</p></div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

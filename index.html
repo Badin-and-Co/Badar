@@ -106,17 +106,46 @@
     </div>
   </section>
 
-  <section class="contact-section" id="contact">
-    <div class="contact-box">
-      <p class="section-label light" data-en="Contact" data-es="Contacto">Contact</p>
-      <h2 data-en="Let’s build your next project" data-es="Construyamos tu próximo proyecto">Let’s build your next project</h2>
-      <div class="contact-info">
-        <p><strong>Email:</strong> info@kojiconstruction.com</p>
-        <p><strong>Phone:</strong> (000) 000-0000</p>
-        <p><strong>Location:</strong> Houston, Texas</p>
-      </div>
-    </div>
-  </section>
+ <section id="contact" class="contact-section">
+   <div class="contact-box">
+     <p class="section-label light" data-en="Contact" data-es="Contacto">Contact</p>
+     <h2 data-en="Let’s build your next project" data-es="Construyamos tu próximo proyecto">Let’s build your next project</h2>
+
+     <div class="contact-wrapper">
+       <div class="contact-info">
+         <p>Email: info@kojiconstruction.com</p>
+         <p>Phone: (000) 000-0000</p>
+         <p>Location: Houston, Texas</p>
+       </div>
+
+       <form class="contact-form" action="https://formspree.io/f/mnjwzajz" method="POST">
+         <input type="hidden" name="_subject" value="New website contact request">
+
+         <label>
+           <span data-en="Name" data-es="Nombre">Name</span>
+           <input type="text" name="name" required>
+         </label>
+
+         <label>
+           <span data-en="Email" data-es="Correo electrónico">Email</span>
+           <input type="email" name="email" required>
+         </label>
+
+         <label>
+           <span data-en="Phone" data-es="Teléfono">Phone</span>
+           <input type="tel" name="phone">
+         </label>
+
+         <label>
+           <span data-en="Message" data-es="Mensaje">Message</span>
+           <textarea name="message" rows="5" required></textarea>
+         </label>
+
+         <button type="submit" data-en="Send Message" data-es="Enviar Mensaje">Send Message</button>
+       </form>
+     </div>
+   </div>
+ </section>
   <script src="script.js"></script>
 </body>
 </html>

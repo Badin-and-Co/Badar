@@ -127,7 +127,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function toggleInquiryForm() {
   const form = document.querySelector('.contact-form');
+  const status = document.getElementById('formStatus');
+
   if (!form) return;
 
   form.classList.toggle('hidden');
+
+  if (status) {
+    status.textContent = '';
+    status.classList.remove('success', 'error');
+  }
 }

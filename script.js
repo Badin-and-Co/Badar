@@ -69,3 +69,58 @@ function moveProjectGallery(button, direction) {
 document.addEventListener('DOMContentLoaded', () => {
   applySavedLanguage();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  applySavedLanguage();
+
+  const form = document.querySelector('.contact-form');
+  const status = document.getElementById('formStatus');
+
+  if (!form || !status) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const currentLang = localStorage.getItem('siteLanguage') || 'en';
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    submitButton.disabled = true;
+    submitButton.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        status.textContent =
+          currentLang === 'es'
+            ? 'Gracias por tu mensaje. Nos pondremos en contacto contigo dentro de 1 a 5 días hábiles.'
+            : 'Thank you for your submission. We will be in contact within 1–5 business days.';
+
+        status.classList.add('success');
+        status.classList.remove('error');
+        form.reset();
+      } else {
+        throw new Error('Form error');
+      }
+    } catch (error) {
+      status.textContent =
+        currentLang === 'es'
+          ? 'Hubo un error. Por favor intenta de nuevo.'
+          : 'There was an error. Please try again.';
+
+      status.classList.add('error');
+      status.classList.remove('success');
+    }
+
+    submitButton.disabled = false;
+    submitButton.textContent = currentLang === 'es' ? 'Enviar Mensaje' : 'Send Message';
+  });
+});

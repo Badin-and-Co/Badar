@@ -82,7 +82,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 .illumination-bg{background-image:url('iluminacion.png');}
 .residential-bg{background-image:url('residencial.png');}
 .industrial-bg{background-image:url('industrial.png');}
-.sistemas-bg{background-image:url('systemas.png');}
+.sistemas-bg{background-image:url('sistemas.png');}
 .industry-overlay{width:100%;padding:28px;background:linear-gradient(to top,rgba(0,0,0,0.64),rgba(0,0,0,0.10));color:white;}
 .industry-overlay h3{font-family:'Playfair Display',serif;font-size:1.85rem;margin-bottom:8px;}
 .industry-overlay p{color:rgba(255,255,255,0.92);font-size:0.94rem;}

@@ -124,3 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
     submitButton.textContent = currentLang === 'es' ? 'Enviar Mensaje' : 'Send Message';
   });
 });
+
+function toggleInquiryForm() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  form.classList.toggle('hidden');
+}

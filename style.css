@@ -61,9 +61,9 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 .services-slider-container{overflow:hidden;width:100%;}
 .services-slider{display:flex;gap:24px;transition:transform 0.45s ease;}
 .service-slide{width:calc((100% - 24px)/2);min-width:calc((100% - 24px)/2);max-width:calc((100% - 24px)/2);height:340px;border-radius:30px;overflow:hidden;position:relative;text-decoration:none;color:white;background-size:cover;background-position:center;box-shadow:var(--shadow);flex:0 0 calc((100% - 24px)/2);}
-.construction-slide{background-image:url('photo8.png');}
-.property-slide{background-image:url('photo8.png');}
-.development-slide{background-image:url('photo8.png');}
+.construction-slide{background-image:url('construccion.png');}
+.property-slide{background-image:url('propiedad.png');}
+.development-slide{background-image:url('development.png');}
 .remodeling-slide{background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80');}
 .service-slide::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.62),rgba(0,0,0,0.15));transition:0.3s ease;}
 .service-slide:hover::before{background:linear-gradient(to top,rgba(0,0,0,0.72),rgba(0,0,0,0.18));}
@@ -78,10 +78,11 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 .industries-section{background:var(--bg);}
 .industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
 .industry-block{min-height:430px;border-radius:28px;overflow:hidden;position:relative;background-size:cover;background-position:center;box-shadow:var(--shadow);display:flex;align-items:flex-end;}
-.remodeling-bg{background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80');}
-.illumination-bg{background-image:url('images/photo8.png');}
-.residential-bg{background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80');}
-.industrial-bg{background-image:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80');}
+.remodeling-bg{background-image:url('remodelacion.png');}
+.illumination-bg{background-image:url('iluminacion.png');}
+.residential-bg{background-image:url('residencial.png');}
+.industrial-bg{background-image:url('industrial.png');}
+.sistemas-bg{background-image:url('systemas.png');}
 .industry-overlay{width:100%;padding:28px;background:linear-gradient(to top,rgba(0,0,0,0.64),rgba(0,0,0,0.10));color:white;}
 .industry-overlay h3{font-family:'Playfair Display',serif;font-size:1.85rem;margin-bottom:8px;}
 .industry-overlay p{color:rgba(255,255,255,0.92);font-size:0.94rem;}

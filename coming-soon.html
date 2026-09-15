@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Coming Soon | Badar Construction</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    /* ==========================================
+       COMING SOON PAGE
+    ========================================== */
+
+    .coming-soon-page{
+      min-height:100vh;
+      padding-top:90px;
+      background:var(--bg);
+      display:flex;
+      flex-direction:column;
+    }
+
+
+    /* ==========================================
+       HERO
+    ========================================== */
+
+    .coming-soon-hero{
+      min-height:70vh;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      text-align:center;
+
+      padding:100px 8% 90px;
+
+      position:relative;
+
+      background:
+        linear-gradient(
+          rgba(246,241,232,0.84),
+          rgba(246,241,232,0.90)
+        ),
+        url('images/photo8.png')
+        center/cover no-repeat;
+    }
+
+
+    .coming-soon-content{
+      max-width:850px;
+      margin:auto;
+    }
+
+
+    .coming-soon-number{
+      font-family:'Montserrat',sans-serif;
+
+      font-size:0.72rem;
+
+      letter-spacing:3px;
+
+      color:var(--accent-dark);
+
+      margin-bottom:18px;
+    }
+
+
+    .coming-soon-label{
+      text-transform:uppercase;
+
+      letter-spacing:3px;
+
+      font-size:0.75rem;
+
+      color:var(--muted);
+
+      margin-bottom:18px;
+    }
+
+
+    .coming-soon-content h1{
+      font-family:'Playfair Display',serif;
+
+      font-size:clamp(3rem,6vw,5rem);
+
+      line-height:1.08;
+
+      font-weight:600;
+
+      margin-bottom:25px;
+
+      color:var(--text);
+    }
+
+
+    .coming-soon-divider{
+      width:70px;
+
+      height:2px;
+
+      background:var(--accent);
+
+      margin:0 auto 28px;
+    }
+
+
+    .coming-soon-content p{
+      max-width:650px;
+
+      margin:0 auto;
+
+      color:var(--muted);
+
+      font-size:1rem;
+
+      line-height:1.9;
+    }
+
+
+    /* ==========================================
+       STATUS
+    ========================================== */
+
+    .coming-soon-status{
+      margin:38px auto 0;
+
+      display:inline-flex;
+
+      align-items:center;
+
+      gap:10px;
+
+      padding:11px 20px;
+
+      border:1px solid rgba(184,155,109,0.35);
+
+      border-radius:999px;
+
+      background:rgba(255,255,255,0.55);
+
+      color:var(--accent-dark);
+
+      text-transform:uppercase;
+
+      letter-spacing:1.5px;
+
+      font-size:0.68rem;
+
+      font-weight:600;
+    }
+
+
+    .coming-soon-status span{
+      width:7px;
+
+      height:7px;
+
+      border-radius:50%;
+
+      background:var(--accent);
+    }
+
+
+    /* ==========================================
+       SERVICE PREVIEW
+    ========================================== */
+
+    .coming-soon-preview{
+      background:#f2eadf;
+
+      padding:55px 8%;
+
+      text-align:center;
+
+      border-top:1px solid rgba(184,155,109,0.16);
+
+      border-bottom:1px solid rgba(184,155,109,0.16);
+    }
+
+
+    .coming-soon-preview p{
+      max-width:700px;
+
+      margin:0 auto;
+
+      color:var(--muted);
+
+      font-size:0.9rem;
+
+      line-height:1.8;
+    }
+
+
+    /* ==========================================
+       BACK BUTTON
+    ========================================== */
+
+    .coming-soon-back{
+      margin-top:32px;
+
+      display:inline-block;
+
+      padding:12px 24px;
+
+      border:1px solid var(--accent);
+
+      border-radius:999px;
+
+      color:var(--accent-dark);
+
+      text-decoration:none;
+
+      text-transform:uppercase;
+
+      letter-spacing:1px;
+
+      font-size:0.68rem;
+
+      font-weight:600;
+
+      transition:0.25s ease;
+    }
+
+
+    .coming-soon-back:hover{
+      background:var(--accent);
+
+      color:white;
+
+      transform:translateY(-2px);
+    }
+
+
+    /* ==========================================
+       MOBILE
+    ========================================== */
+
+    @media(max-width:700px){
+
+      .coming-soon-page{
+        padding-top:135px;
+      }
+
+      .coming-soon-hero{
+        min-height:65vh;
+
+        padding:
+          70px
+          6%
+          75px;
+      }
+
+      .coming-soon-content h1{
+        font-size:3rem;
+      }
+
+      .coming-soon-content p{
+        font-size:0.92rem;
+      }
+
+      .coming-soon-preview{
+        padding:45px 7%;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- ==========================================
+       HEADER
+  ========================================== -->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <div></div>
+
+      <nav class="main-nav">
+
+        <a
+          href="index.html#home"
+          data-en="Home"
+          data-es="Inicio"
+        >
+          Home
+        </a>
+
+        <a
+          href="index.html#what-we-do"
+          data-en="Who We Are"
+          data-es="Quienes Somos"
+        >
+          Who We Are
+        </a>
+
+        <a
+          href="index.html#projects"
+          data-en="Gallery Projects"
+          data-es="Galería de Proyectos"
+        >
+          Gallery Projects
+        </a>
+
+        <a
+          href="index.html#services"
+          data-en="Services"
+          data-es="Servicios"
+        >
+          Services
+        </a>
+
+        <a
+          href="index.html#contact"
+          data-en="Contact"
+          data-es="Contacto"
+        >
+          Contact
+        </a>
+
+        <a
+          href="https://812ohr.com"
+          data-en="Partner"
+          data-es="Asociado"
+        >
+          Partner
+        </a>
+
+      </nav>
+
+
+      <div class="language-inline">
+
+        <span
+          onclick="setLanguage('en', this)"
+          data-lang="en"
+          class="lang active"
+        >
+          EN
+        </span>
+
+        <span
+          onclick="setLanguage('es', this)"
+          data-lang="es"
+          class="lang"
+        >
+          ES
+        </span>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ==========================================
+       MAIN
+  ========================================== -->
+
+  <main class="coming-soon-page">
+
+
+    <!-- ========================================
+         COMING SOON HERO
+    ========================================= -->
+
+    <section class="coming-soon-hero">
+
+      <div class="coming-soon-content">
+
+
+        <div
+          class="coming-soon-number"
+          data-en="01"
+          data-es="01"
+        >
+          01
+        </div>
+
+
+        <p
+          class="coming-soon-label"
+          data-en="Service"
+          data-es="Servicio"
+        >
+          Service
+        </p>
+
+
+        <h1
+          data-en="General Construction"
+          data-es="Construcción en General"
+        >
+          General Construction
+        </h1>
+
+
+        <div class="coming-soon-divider"></div>
+
+
+        <p
+          data-en="We are currently preparing this service area to provide a complete overview of our capabilities, processes, and project experience. More information will be available soon."
+          data-es="Actualmente estamos preparando esta sección para presentar de manera completa nuestras capacidades, procesos y experiencia en proyectos. Próximamente estará disponible más información."
+        >
+          We are currently preparing this service area to provide a complete
+          overview of our capabilities, processes, and project experience.
+          More information will be available soon.
+        </p>
+
+
+        <div class="coming-soon-status">
+
+          <span></span>
+
+          <span
+            data-en="Coming Soon"
+            data-es="Próximamente"
+          >
+            Coming Soon
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         PREVIEW / MESSAGE
+    ========================================= -->
+
+    <section class="coming-soon-preview">
+
+      <p
+        data-en="Our services are being developed with the same attention to detail, quality, and professionalism that defines Badar Construction. We look forward to sharing more with you."
+        data-es="Nuestros servicios están siendo desarrollados con la misma atención al detalle, calidad y profesionalismo que distingue a Badar Construction. Esperamos compartir más información contigo próximamente."
+      >
+        Our services are being developed with the same attention to detail,
+        quality, and professionalism that defines Badar Construction.
+        We look forward to sharing more with you.
+      </p>
+
+
+      <a
+        href="index.html#services"
+        class="coming-soon-back"
+        data-en="← Back to Services"
+        data-es="← Regresar a Servicios"
+      >
+        ← Back to Services
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ==========================================
+       CONTACT / FOOTER
+  ========================================== -->
+
+  <section class="contact-section">
+
+    <div class="contact-box">
+
+      <p
+        class="section-label"
+        data-en="Contact"
+        data-es="Contacto"
+      >
+        Contact
+      </p>
+
+
+      <h2
+        data-en="Let’s build your next project"
+        data-es="Construyamos tu próximo proyecto"
+      >
+        Let’s build your next project
+      </h2>
+
+
+      <p
+        data-en="Have a project in mind? Contact us to discuss your needs and learn more about our services."
+        data-es="¿Tienes un proyecto en mente? Contáctanos para hablar sobre tus necesidades y conocer más sobre nuestros servicios."
+      >
+        Have a project in mind? Contact us to discuss your needs and learn
+        more about our services.
+      </p>
+
+
+      <div class="contact-info-bottom">
+
+        <p>
+          Email: qtradetx@gmail.com
+        </p>
+
+        <p>
+          Phone: (346) 380-7898
+        </p>
+
+        <p>
+          Location: Houston, Texas
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================
+       SCRIPT
+  ========================================== -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
